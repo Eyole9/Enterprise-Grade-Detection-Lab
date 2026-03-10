@@ -1,0 +1,3 @@
+index=main (EventCode=4698 OR EventID=4698) ("powershell.exe" OR "cmd.exe" OR "wscript.exe" OR "cscript.exe")
+| table _time host Account_Name
+| sort - _time
