@@ -1,0 +1,3 @@
+index=main (EventCode=4688 OR EventID=4688) "powershell.exe" ("-enc" OR "-EncodedCommand" OR "IEX" OR "DownloadString")
+| table _time host Account_Name
+| sort - _time
